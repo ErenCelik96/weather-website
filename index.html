@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <nav>
+        <img class="sun" src="assets/sun.svg" alt="sun"/>
+        <img class="head--img cloudLeft" src="assets/cloud-left.svg" alt="cloud"/>
+        <h2 class="heading"> Hava Durumu <br/> Tahmini</h2>
+        <img class="head--img cloudRight" src="./assets/cloud-right.svg" alt="cloud"/>
+    </nav>
+    <div class="main">
+        <div class="main--today">
+            <div class="today--search">
+                <p class="city">Şehir:</p>
+                <input id="myText" class="input input--search" type="text" onfocus="this.value=''"/>
+                <input id="myBtn" class="input input--submit" type="submit" value="Ara" onclick="data()" />
+            </div>
+            <p class="text today">Bugün</p>
+            <p class="text temperature">Sıcaklık: <span class="span1"></span></p>
+            <p class="text textCity">Şehir: <span class="span2"></span></p>
+            <p class="text wind">Rüzgar: <span class="span3"></span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card card1">
+            <p style="font-weight: bold; margin-bottom:30px;">Yarın</p>
+            <p>Sıcaklık: <span class="span4"></span> </p>
+            <p>Rüzgar: <span class="span5"></span> </p>
+        </div>
+        <div class="card card2">
+            <p style="font-weight: bold; margin-bottom:30px;">2.gün</p>
+            <p>Sıcaklık: <span class="span6"></span> </p>
+            <p>Rüzgar: <span class="span7"></span> </p>
+        </div>
+        <div class="card card2">
+            <p style="font-weight: bold; margin-bottom:30px;">3.gün</p>
+            <p>Sıcaklık: <span class="span8"></span> </p>
+            <p>Rüzgar: <span class="span9"></span> </p>
+        </div>
+    </div>
+    <footer>
+        <p class="credit">Created by <a href="https://github.com/ErenCelik96" target="_blank">Eren ÇELİK</a></p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
